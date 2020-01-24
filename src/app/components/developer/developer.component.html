@@ -1,0 +1,14 @@
+<div class="wrapper">
+	<mat-card class="card">
+		<img [src]="dataService.developerInfo.img" alt="">
+		<div class="info">
+			<div>ПІБ: <a target="blank" [href]="dataService.developerInfo.name">{{dataService.developerInfo.name}}</a></div>
+			<div>Email: <a target="blank" [href]="'mailto:' + dataService.developerInfo.email">{{dataService.developerInfo.email}}</a></div>
+			<div>Telegram: <a target="blank" [href]="dataService.developerInfo.telegram">{{dataService.developerInfo.telegram}}</a>
+			</div>
+			<div>Linkedin: <a target="blank" [href]="dataService.developerInfo.linkedin">{{dataService.developerInfo.linkedin}}</a>
+			</div>
+		</div>
+
+	</mat-card>
+</div>

@@ -1,0 +1,22 @@
+<div class="wrapper">
+	<mat-card *ngIf="!startWorking; else figure">Для початку роботи нажміть кнопку згенерувати</mat-card>
+
+	<ng-template #figure>
+		<div class="figure"
+		 [ngClass]="{'circle': randomNumber > 33 && randomNumber < 66,'triangle': randomNumber > 66}"
+			>
+
+			<div
+			 class="random-number"
+			[ngClass]="{'inside-triangle': randomNumber > 66}"
+			>
+			{{ randomNumber }}
+			</div>
+		</div>
+	</ng-template>
+
+	<div class="wrapper__buttons">
+		<button mat-raised-button color="primary" (click)="dataService.generateRandom()">Згенерувати</button>
+	</div>
+
+</div>

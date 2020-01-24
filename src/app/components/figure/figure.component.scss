@@ -1,0 +1,51 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-weight: bold;
+
+	.figure {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(161, 100, 100);
+		width: 40vw;
+		height: 40vw;
+		transition: .35s;	
+	}
+
+	.circle {
+		border-radius: 50%;
+	}
+	.triangle {
+		width: 0;
+		height: 0;
+		border-left: 20vw solid transparent;
+		border-right: 20vw solid transparent;
+		border-bottom: 40vw solid rgb(161, 100, 100);
+		border-top: 0;
+		background-color: transparent;
+	}
+
+	.random-number {
+		position: relative;
+		color: rgb(255, 255, 255);
+
+		&.inside-triangle {
+			top: 24vw;
+		}
+	}
+
+	
+	&__buttons {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: fixed;
+		right: 50px;
+		bottom: 50px;
+		left: 50px;
+	}
+
+}
