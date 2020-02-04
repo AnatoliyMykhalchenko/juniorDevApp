@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent implements OnInit{
   private subscription: Subscription;
-  private startWorking: boolean = false;
+  public startWorking: boolean = false;
   constructor(
     private dialog: MatDialog,
     private dataService: DataLogicService

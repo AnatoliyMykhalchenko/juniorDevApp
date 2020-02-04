@@ -8,9 +8,9 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./figure.component.scss']
 })
 export class FigureComponent implements OnInit, OnDestroy {
-  private startWorking: boolean;
+  public startWorking: boolean;
   private subscription: Subscription;
-  private randomNumber: number;
+  public randomNumber: number;
 
   constructor( public dataService: DataLogicService ) { }
 
